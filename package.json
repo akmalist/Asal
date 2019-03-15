@@ -1,0 +1,24 @@
+{
+  "name": "asal",
+  "version": "1.0.0",
+  "description": "Website for catering company Asal",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akmalist/Asal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akmalist/Asal/issues"
+  },
+  "homepage": "https://github.com/akmalist/Asal#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
