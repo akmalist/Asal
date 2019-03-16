@@ -1,11 +1,26 @@
-body {
-       background-image: url('public\images\cook.png');
-        height: 100%;
-      }
 
-
-.carousel {
+ .carousel {
   width:90%;
   height:60%;
  padding-left: 6rem;
+}
+
+
+img.logo{
+width: 100px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+
+.card{
+  text-align: center;
+
+}
+
+
+/* Position text in the middle of the page/image */
+.py-5  {
+ color: black;
+ border: solid 2px;
 }
