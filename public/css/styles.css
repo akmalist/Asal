@@ -1,8 +1,11 @@
+body {
+       background-image: url('public\images\cook.png');
+        height: 100%;
+      }
+
+
 .carousel {
   width:90%;
   height:60%;
  padding-left: 6rem;
 }
-
-
- 
