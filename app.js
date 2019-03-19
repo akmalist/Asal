@@ -44,6 +44,12 @@ app.get("/menu", function(req, res) {
 });
 
 
+/////////////////fix the nav onClick////////////
+
+
+// add this
+// https://stackoverflow.com/questions/31497639/make-drop-down-menu-push-content-down-on-click
+//
 
 
 app.listen(3000, function() {
