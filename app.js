@@ -4,6 +4,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 
+// install Jquery
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+const { window } = new JSDOM();
+const { document } = (new JSDOM('')).window;
+global.document = document;
+const $ = require("jquery")(window);
+//////////////////////
 
 const app = express();
 
@@ -44,8 +52,8 @@ app.get("/menu", function(req, res) {
 });
 
 
-/////////////////fix the nav onClick////////////
-
+/////////////////fix the nav onClick navBar////////////
+ 
 
 // add this
 // https://stackoverflow.com/questions/31497639/make-drop-down-menu-push-content-down-on-click

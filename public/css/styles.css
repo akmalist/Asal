@@ -1,9 +1,29 @@
 
 body, html {
   height: 100%;
+  font-size: 1.5rem;
   font-family: 'El Messiri', 'Archivo', sans-serif;
 
+
 }
+
+
+/************************Navigation *****************************/
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px; /** here **/
+    border: 1px solid transparent;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+/************************************** Gallery****************************/
+
+
+
  .carousel {
   width:90%;
   height:60%;
@@ -37,7 +57,7 @@ width: 100px;
 
 
 }
-.bg-text {
+  .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
@@ -48,15 +68,13 @@ width: 100px;
   left: 50%;
   transform: translate(-52%, -50%);
   z-index: 2;
-  width: 90%;
+  width: 60%;
   padding: 1rem;
   text-align: center;
 }
 
 
-/* .card{
 
-} */
 
 
 /* Position text in the middle of the page/image */
@@ -70,15 +88,18 @@ width: 100px;
 
 
 /********************Footer****************/
+
 .message-me{
   padding-top: 50px 0;
   text-align: center;
  }
-.bottom-container{
-  background-color:#343a40;
-    padding: 50px 0 20px;
-    text-align: center;
-}
+ .bottom-container{
+
+   background-color:#343a40;
+     padding: 50px 0 20px;
+
+     text-align: center;
+ }
 .fa-facebook {
   /* background: #3B5998; */
   color: white;
