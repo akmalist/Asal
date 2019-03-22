@@ -52,14 +52,14 @@ app.get("/menu", function(req, res) {
 });
 
 
-/////////////////fix the nav onClick navBar////////////
 
+//heroku ports listen
 
-// add this
-// https://stackoverflow.com/questions/31497639/make-drop-down-menu-push-content-down-on-click
-//
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
-
-app.listen(3000, function() {
- console.log("Server started on port 3000");
+app.listen(port, function() {
+  console.log("Server has started Succesffully");
 });
