@@ -5,13 +5,8 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 
 // install Jquery
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-const { window } = new JSDOM();
-const { document } = (new JSDOM('')).window;
-global.document = document;
-const $ = require("jquery")(window);
-//////////////////////
+
+ 
 
 const app = express();
 
@@ -21,8 +16,7 @@ app.use(bodyParser.urlencoded({
  extended: true
 }));
 app.use(express.static("public"));
-// // app.use(express.static(__dirname + 'public'));
-// app.use(express.static(__dirname + '/public'));
+
 
 app.use('/public/images/', express.static('./public/images'));
 

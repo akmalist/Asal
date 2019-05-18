@@ -1,7 +1,7 @@
 
 body, html {
   height: 100%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'El Messiri', 'Archivo', sans-serif;
 }
 
@@ -11,7 +11,7 @@ body, html {
 /************************Navigation *****************************/
 
 .navbar {
-    position: relative;
+    position:relative;
     min-height: 50px;
     margin-bottom: 0;
     border: 1px solid transparent;
@@ -22,47 +22,65 @@ body, html {
 /************************************** Gallery****************************/
 
 
-img.logo{
+.logo{
   width:200px;
   height: 150px;
   border-radius: 5px;
 }
 
 /***************** Home Page *****/
-.bg {
-  /* The image used */
-  background-image: url("../../images/rice.jpg");
-  /* Add the blur effect */
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  margin-bottom: -2px;
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
 }
-  .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  border: 3px solid #f1f1f1;
-  position:absolute;
-  top: 70%;
+
+header video {
+  position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translate(-52%, -50%);
-  z-index: 2;
-  width: 70%;
-  padding: 1rem;
-  text-align: center;
-  font-size: 1px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('/images/rice.jpg ') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+
+
+/***************** Media Page *****/
 
 @media screen and (max-width: 700px) {
 
@@ -131,29 +149,19 @@ border-radius: 10%;
 
 /********************Footer****************/
 
-.message-me{
-  padding-top: 50px 0;
-  text-align: center;
+
+ .footer{
+    background-color:#343a40;
+    text-align: center;
+
  }
- .bottom-container{
+ .fab{
+   color: #fff;
+   padding: 2.5rem 0.5rem;
 
-   background-color:#343a40;
-     padding: 50px 0 20px;
-
-     text-align: center;
  }
-.fa-facebook {
-  /* background: #3B5998; */
-  color: white;
-    padding-right: 0.5rem;
-}
 
-.fa-instagram {
-  /* background: #125688; */
-  color: white;
-  padding-left: 0.5rem;
-}
 .copyright{
   color:white;
-  padding-top: 0.5rem;
+  margin-bottom: 0;
 }
